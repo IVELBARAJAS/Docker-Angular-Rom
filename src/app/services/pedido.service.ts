@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import Swal from 'sweetalert2';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-const URL_BASE:string = environment.API.EndPoint.Node+"pedidos";
+const URL_BASE:string = environment.API.EndPoint.DockerNode+"pedidos";
 
 @Injectable({
   providedIn: 'root'

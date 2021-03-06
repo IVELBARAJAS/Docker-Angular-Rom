@@ -3,7 +3,7 @@ import { HttpClient,HttpHeaders } from '@angular/common/http';
 import Swal from 'sweetalert2';
 import { environment } from 'src/environments/environment';
 
-const URL_BASE:string = environment.API.EndPoint.Node+"auth";
+const URL_BASE:string = environment.API.EndPoint.DockerNode+"auth";
 
 @Injectable({
   providedIn: 'root'

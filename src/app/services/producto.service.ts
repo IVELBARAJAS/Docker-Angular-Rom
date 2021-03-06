@@ -13,7 +13,7 @@ export class ProductoService {
 
   constructor(private http:HttpClient) { }
 
-  URL_BASE:string = environment.API.EndPoint.Azure;
+  URL_BASE:string = environment.API.EndPoint.Docker;
   InfoProductoId;
   ultimosproductos:any ={};
   ultimosproductosf:any ={};

@@ -3,8 +3,9 @@ import { HttpClient,HttpHeaders } from '@angular/common/http';
 import Swal from 'sweetalert2';
 import { observable, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
-const URL_BASE:string = "http://localhost:3000/empleados";
+const URL_BASE:string = environment.API.EndPoint.DockerNode+"empleados";
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ const URL_BASE:string = "http://localhost:3000/empleados";
 export class EmpleadosService {
 
   constructor(private http:HttpClient) { }
-  URL_BASE:string = "http://localhost:3000/empleados";
+  URL_BASE:string = environment.API.EndPoint.Node+"empleados";
 
   /*Traer todos los empleados*/
   public GetAllEmpl = ()=>{
